@@ -1,0 +1,125 @@
+html,
+body {
+  padding: 1em;
+  margin: 0;
+  font-family: Valorant Font, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: x-large;
+}
+
+@font-face {
+  font-family: "Valorant Font";   /*Can be any text*/
+  src: local("AirbnbCerealLight"),
+    url('../public/Valorant\ Font.ttf') format("truetype");
+}
+
+html {
+  background-color: #0f1822;
+  color: white;
+}
+
+a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+a:link {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:hover{
+  color: #ff4654 !important;
+}
+
+a:active{
+  color: rgb(255, 0, 21) !important; 
+}
+
+* {
+  box-sizing: border-box ;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  height: 5%;
+  z-index: 10;
+}
+
+nav{
+  width: 100%;
+  height: 100%;
+}
+
+.display-flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+
+.header-navbar{
+  position: fixed;
+  top: 0; 
+  background-color: #0f1822;
+  z-index: 10;
+}
+
+.valorant-button{
+
+  width: 100%;
+  max-width: 240px;
+  height: 54px;
+  padding: 8px;
+  font-size: 0.8rem;
+  font-weight: 900;
+  background-color:  #0f1822;
+  color: #ff4655;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 0 0 1px inset rgba(186, 150, 89, 0.3);
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.valorant-button:hover {
+  background-position: 0 -100%;
+  background-color: #ff4655;
+  color: white;
+}
+
+.valorant-button:hover a:hover{
+  color: white !important
+}
+
+.detail-button{
+  margin: 0 0 0 0;
+  color: white;
+}
+
+.cards-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+}
+
+.agent-card{
+  background-color: #f4f7ff;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+.agent-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.agent-name{
+  color: #0f1822;
+  text-align: center;
+}
